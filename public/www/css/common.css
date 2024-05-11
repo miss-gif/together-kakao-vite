@@ -32,4 +32,6 @@
 /* 임시 코드 */
 body {
   background-color: #eee;
+  font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic",
+    "맑은 고딕", dotum, 돋움, sans-serif;
 }

@@ -78,6 +78,7 @@
 ## 퍼블리싱 작업 준비
 
 - public > www >
+
   - apis
   - assets
   - css
@@ -86,3 +87,6 @@
   - scss
   - `index.html`
     - 기초 작업
+
+- 작업영역 나누기
+- `reset.css` `common.css` 사용글꼴 이미지 등 준비
