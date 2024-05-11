@@ -1,0 +1,13 @@
+main {
+  margin-top: 100px;
+}
+main section {
+  width: 700px;
+  min-height: 50px;
+  background-color: #fff;
+}
+main aside {
+  width: 360px;
+  min-height: 50px;
+  background-color: #fff;
+}
