@@ -1,3 +1,16 @@
+:root {
+  --mainBlack: #202020;
+  --mainWhite: #fff;
+  --mainRed: #ff4050;
+  --mainPurple: #bb6bff;
+  --gray-400: #444;
+  --gray-500: #555;
+  --gray-600: #666;
+  --gray-700: #777;
+  --gray-800: #888;
+  --gray-900: #999;
+}
+
 .inner {
   max-width: 1120px;
   width: 100%;
@@ -5,6 +18,15 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+}
+
+.hidden {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 /* 임시 코드 */
