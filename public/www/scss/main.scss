@@ -2,12 +2,86 @@ main {
   margin-top: 100px;
   article {
     width: 700px;
-    min-height: 50px;
-    background-color: #fff;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
   }
   aside {
     width: 360px;
     min-height: 50px;
-    background-color: #fff;
+    background-color: #fff; // 임시
+  }
+}
+
+.section__top img {
+  border-radius: 12px;
+}
+
+.content {
+  padding: 24px 30px 32px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
+  background-color: #fff;
+  border-radius: 12px;
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: rgb(32, 32, 32);
+    letter-spacing: -0.3px;
+  }
+  &__subtitle {
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgb(102, 102, 102);
+    letter-spacing: -0.1px;
+  }
+}
+
+.card {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+  &__left {
+    width: 280px;
+    height: 100px;
+    background: url("../images/c1400x960.jpg") no-repeat center / cover;
+    border-radius: 8px;
+    &__header {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__right {
+    &__title {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.33;
+    }
+    &__value {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__situation {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__btns {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+progress {
+  width: 100%;
+  height: 4px;
+  appearance: none;
+  &::-webkit-progress-bar {
+    overflow: hidden;
+    background-color: rgb(233, 233, 233);
+    border-radius: 50px;
+  }
+  &::-webkit-progress-value {
+    background-color: #ff4050;
   }
 }
