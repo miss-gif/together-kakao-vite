@@ -24,13 +24,13 @@ main {
   border-radius: 12px;
   &__title {
     font-size: 20px;
-    font-weight: 600;
     line-height: 1.4;
     color: rgb(32, 32, 32);
     letter-spacing: -0.3px;
   }
   &__subtitle {
     font-size: 15px;
+    margin-top: 4px;
     line-height: 1.6;
     color: rgb(102, 102, 102);
     letter-spacing: -0.1px;
@@ -57,7 +57,7 @@ main {
       justify-content: space-between;
       align-items: center;
       color: #c9c9c9;
-      font-weight: bold;
+
       padding: 0 10px;
     }
   }
@@ -68,14 +68,13 @@ main {
     width: 335px;
     &__title {
       font-size: 18px;
-      font-weight: bold;
+
       line-height: 1.33;
     }
     &__value {
       display: flex;
       justify-content: space-between;
       font-size: 14px;
-      font-weight: bold;
     }
     &__situation {
       display: flex;
@@ -109,5 +108,14 @@ progress {
   }
   &::-webkit-progress-value {
     background-color: #ff4050;
+  }
+}
+
+.cardlist {
+  &__carditem {
+    width: 200px;
+    img {
+      margin: 10px 0;
+    }
   }
 }

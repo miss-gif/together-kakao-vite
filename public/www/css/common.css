@@ -27,13 +27,23 @@
 @font-face {
   font-family: "KakaoBig Bold";
   font-style: normal;
-  font-weight: bold;
+
   font-display: swap;
   src:
     url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff2)
       format("woff2"),
     url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff)
       format("woff");
+}
+
+body {
+  background-color: #eee;
+  font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic",
+    "맑은 고딕", dotum, 돋움, sans-serif;
+}
+
+.bold {
+  font-family: "KakaoBig Bold";
 }
 
 .inner {
@@ -52,11 +62,4 @@
   width: 1px;
   height: 1px;
   overflow: hidden;
-}
-
-/* 임시 코드 */
-body {
-  background-color: #eee;
-  font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic",
-    "맑은 고딕", dotum, 돋움, sans-serif;
 }
