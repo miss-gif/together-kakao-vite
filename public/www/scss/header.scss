@@ -21,38 +21,38 @@ h1 {
   }
 }
 
-.nav__list {
-  font-weight: bold;
-  display: flex;
-  gap: 22px;
-  li {
+.nav {
+  &__list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 71px;
-    letter-spacing: -0.1px;
-    &:nth-child(2) {
-      position: relative;
-      .newbadge {
-        position: absolute;
-        right: 10%;
-        top: 35%;
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        background-color: rgb(255, 90, 114);
-      }
-    }
-    a {
+    gap: 22px;
+    li {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 14px;
-      height: 100%;
+      height: 71px;
+      letter-spacing: -0.1px;
+      &:nth-child(2) {
+        position: relative;
+        .newbadge {
+          position: absolute;
+          right: 10%;
+          top: 35%;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: rgb(255, 90, 114);
+        }
+      }
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px;
+        height: 100%;
+      }
     }
   }
 }
-
 .active {
   border-bottom: 2px solid rgb(57, 57, 57);
 }

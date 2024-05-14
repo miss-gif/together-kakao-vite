@@ -8,44 +8,27 @@ header {
   background-color: #fff;
 }
 header .inner {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 h1 {
   height: 100%;
 }
 h1 a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 100%;
 }
 
 .nav__list {
-  font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 22px;
 }
 .nav__list li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 71px;
   letter-spacing: -0.1px;
 }
@@ -62,15 +45,9 @@ h1 a {
   background-color: rgb(255, 90, 114);
 }
 .nav__list li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 14px;
   height: 100%;
 }
@@ -80,15 +57,9 @@ h1 a {
 }
 
 .header__icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 .header__icons li:nth-child(1) img {
@@ -96,12 +67,8 @@ h1 a {
   overflow: hidden;
 }
 .header__icons li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 10px;
 }
 .header__icons li img {

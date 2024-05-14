@@ -24,13 +24,13 @@ main {
   border-radius: 12px;
   &__title {
     font-size: 20px;
-    font-weight: 600;
     line-height: 1.4;
     color: rgb(32, 32, 32);
     letter-spacing: -0.3px;
   }
   &__description {
     font-size: 15px;
+    margin-top: 4px;
     line-height: 1.6;
     color: rgb(102, 102, 102);
     letter-spacing: -0.1px;
@@ -48,6 +48,21 @@ main {
     background: url("../images/c1400x960.jpg") no-repeat center / cover;
     border-radius: 8px;
     overflow: hidden;
+<<<<<<< HEAD
+=======
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      background-color: #202020;
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #c9c9c9;
+
+      padding: 0 10px;
+    }
+>>>>>>> da9c5ea390c4c0f1acb886d9b953ea5f6f147f09
   }
   &__header {
     display: flex;
@@ -68,9 +83,10 @@ main {
     width: 335px;
     &__title {
       font-size: 18px;
-      font-weight: bold;
+
       line-height: 1.33;
     }
+<<<<<<< HEAD
   }
   &__progress {
     width: 100%;
@@ -80,6 +96,12 @@ main {
       overflow: hidden;
       background-color: rgb(233, 233, 233);
       border-radius: 50px;
+=======
+    &__value {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+>>>>>>> da9c5ea390c4c0f1acb886d9b953ea5f6f147f09
     }
     &::-webkit-progress-value {
       background-color: #ff4050;
@@ -110,3 +132,29 @@ main {
     }
   }
 }
+<<<<<<< HEAD
+=======
+
+progress {
+  width: 100%;
+  height: 4px;
+  appearance: none;
+  &::-webkit-progress-bar {
+    overflow: hidden;
+    background-color: rgb(233, 233, 233);
+    border-radius: 50px;
+  }
+  &::-webkit-progress-value {
+    background-color: #ff4050;
+  }
+}
+
+.cardlist {
+  &__carditem {
+    width: 200px;
+    img {
+      margin: 10px 0;
+    }
+  }
+}
+>>>>>>> da9c5ea390c4c0f1acb886d9b953ea5f6f147f09
