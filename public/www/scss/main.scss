@@ -29,7 +29,7 @@ main {
     color: rgb(32, 32, 32);
     letter-spacing: -0.3px;
   }
-  &__subtitle {
+  &__description {
     font-size: 15px;
     line-height: 1.6;
     color: rgb(102, 102, 102);
@@ -42,26 +42,26 @@ main {
   display: flex;
   gap: 25px;
   justify-content: space-between;
-  &__left {
+  &__image {
     width: 280px;
     height: 168px;
     background: url("../images/c1400x960.jpg") no-repeat center / cover;
     border-radius: 8px;
     overflow: hidden;
-    &__header {
-      display: flex;
-      justify-content: space-between;
-      background-color: #202020;
-      height: 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: #c9c9c9;
-      font-weight: bold;
-      padding: 0 10px;
-    }
   }
-  &__right {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #202020;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #c9c9c9;
+    font-weight: bold;
+    padding: 0 10px;
+  }
+  &__info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -71,43 +71,42 @@ main {
       font-weight: bold;
       line-height: 1.33;
     }
-    &__value {
-      display: flex;
-      justify-content: space-between;
-      font-size: 14px;
-      font-weight: bold;
+  }
+  &__progress {
+    width: 100%;
+    height: 4px;
+    appearance: none;
+    &::-webkit-progress-bar {
+      overflow: hidden;
+      background-color: rgb(233, 233, 233);
+      border-radius: 50px;
     }
-    &__situation {
-      display: flex;
-      justify-content: space-between;
-      font-size: 12px;
-    }
-    &__btns {
-      margin-top: 16px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 14px;
-      button {
-        width: 163px;
-        height: 40px;
-        border: 1px solid #c9c9c9;
-        letter-spacing: -0.1px;
-        border-radius: 6px;
-      }
+    &::-webkit-progress-value {
+      background-color: #ff4050;
     }
   }
-}
-
-progress {
-  width: 100%;
-  height: 4px;
-  appearance: none;
-  &::-webkit-progress-bar {
-    overflow: hidden;
-    background-color: rgb(233, 233, 233);
-    border-radius: 50px;
+  &__value {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
   }
-  &::-webkit-progress-value {
-    background-color: #ff4050;
+  &__situation {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  &__btns {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    button {
+      width: 163px;
+      height: 40px;
+      border: 1px solid #c9c9c9;
+      letter-spacing: -0.1px;
+      border-radius: 6px;
+    }
   }
 }
