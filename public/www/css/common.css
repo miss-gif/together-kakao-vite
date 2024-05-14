@@ -46,6 +46,15 @@ body {
   font-family: "KakaoBig Bold";
 }
 
+.hidden {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .inner {
   max-width: 1120px;
   width: 100%;
@@ -55,11 +64,8 @@ body {
   margin: 0 auto;
 }
 
-.hidden {
-  position: absolute;
-  left: -9999px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+@media (max-width: 768px) {
+  .inner {
+    padding: 0 20px;
+  }
 }

@@ -29,7 +29,7 @@ main aside {
   color: rgb(32, 32, 32);
   letter-spacing: -0.3px;
 }
-.content__subtitle {
+.content__description {
   font-size: 15px;
   margin-top: 4px;
   line-height: 1.6;
@@ -43,14 +43,14 @@ main aside {
   gap: 25px;
   justify-content: space-between;
 }
-.card__left {
+.card__image {
   width: 280px;
   height: 168px;
   background: url("../images/c1400x960.jpg") no-repeat center/cover;
   border-radius: 8px;
   overflow: hidden;
 }
-.card__left__header {
+.card__image__header {
   display: flex;
   justify-content: space-between;
   background-color: #202020;
@@ -61,33 +61,54 @@ main aside {
   color: #c9c9c9;
   padding: 0 10px;
 }
-.card__right {
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #202020;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #c9c9c9;
+  font-weight: bold;
+  padding: 0 10px;
+}
+.card__info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 335px;
 }
-.card__right__title {
+.card__info__title {
   font-size: 18px;
   line-height: 1.33;
 }
-.card__right__value {
+.card__info__value {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
 }
-.card__right__situation {
+.card__info::-webkit-progress-value {
+  background-color: #ff4050;
+}
+.card__value {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: bold;
+}
+.card__situation {
   display: flex;
   justify-content: space-between;
   font-size: 12px;
 }
-.card__right__btns {
+.card__btns {
   margin-top: 16px;
   display: flex;
   justify-content: space-between;
   font-size: 14px;
 }
-.card__right__btns button {
+.card__btns button {
   width: 163px;
   height: 40px;
   border: 1px solid #c9c9c9;
