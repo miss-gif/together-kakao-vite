@@ -48,16 +48,16 @@ body {
 
 .hidden {
   position: absolute;
-  left: -9999px;
   top: auto;
+  left: -9999px;
   width: 1px;
   height: 1px;
   overflow: hidden;
 }
 
 .inner {
-  max-width: 1120px;
   width: 100%;
+  max-width: 1120px;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -68,4 +68,14 @@ body {
   .inner {
     padding: 0 20px;
   }
+}
+
+/* test 코드 */
+.card__image {
+  border: 1px solid #000;
+}
+
+:focus {
+  outline: 1px solid blue;
+  outline-offset: 2px;
 }

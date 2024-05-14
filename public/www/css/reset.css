@@ -30,9 +30,9 @@ img {
 
 button {
   border: 0;
-  border-radius: 0;
   background-color: transparent;
   cursor: pointer;
+  border-radius: 0;
 }
 
 a,
@@ -43,9 +43,9 @@ a:hover {
 }
 
 input {
+  border: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
-  border: 0;
 }
 
 button,

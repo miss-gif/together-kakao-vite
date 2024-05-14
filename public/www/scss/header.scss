@@ -10,18 +10,18 @@ header {
 
 h1 {
   a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 .nav {
   &__list {
+    height: 100%;
     display: flex;
     gap: 22px;
-    height: 100%;
     letter-spacing: -0.1px;
     li {
       position: relative;
@@ -29,41 +29,41 @@ h1 {
         position: relative;
         .newbadge {
           position: absolute;
-          right: 10%;
           top: 35%;
+          right: 10%;
           width: 4px;
           height: 4px;
-          border-radius: 50%;
           background-color: rgb(255, 90, 114);
+          border-radius: 50%;
         }
       }
       a {
+        height: 100%;
         display: flex;
         align-items: center;
         padding: 14px;
-        height: 100%;
       }
     }
     .active::after {
-      position: absolute;
       content: "";
+      position: absolute;
       bottom: -1px;
-      z-index: 1;
       width: 100%;
       border-bottom: 2px solid rgb(57, 57, 57);
+      z-index: 1;
     }
   }
 }
 
 .header__icons {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
+  align-items: center;
+  justify-content: center;
   li {
     &:nth-child(1) img {
-      border-radius: 8px;
       width: 24px;
+      border-radius: 8px;
     }
     a {
       display: flex;
@@ -76,8 +76,8 @@ h1 {
 // 헤더 반응형
 @media (max-width: 768px) {
   header {
-    background-color: orange;
     height: 92px;
+    background-color: orange;
     .inner {
       display: flex;
       flex-direction: column-reverse;
@@ -85,9 +85,9 @@ h1 {
     }
     h1 {
       position: absolute;
-      height: 55px;
       top: 30%;
       left: 50%;
+      height: 55px;
       transform: translate(-50%, -50%);
     }
   }
