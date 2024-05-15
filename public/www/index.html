@@ -84,9 +84,9 @@
       </div>
     </header>
     <!-- 메인 영역 -->
-    <main>
+    <main class="main">
       <h2 class="hidden">메인 영역</h2>
-      <div class="inner">
+      <div class="main__inner inner">
         <!-- 왼쪽 컨텐츠 영역 -->
         <article>
           <h3 class="hidden">콘텐츠 영역</h3>
@@ -98,190 +98,210 @@
             /></a>
           </section>
           <!-- 섹션2 -->
-          <section class="content">
+          <section class="content last-donor">
             <h4 class="content__title">마지막 기부자를 찾습니다</h4>
             <p class="content__desc">목표 달성까지 얼마 남지 않았어요!</p>
-            <a href="#">
+            <a class="content__link" href="#">
               <div class="card">
                 <div class="card__image">
                   <div class="card__header">
-                    <div class="card__header__text">남은금액</div>
-                    <div class="card__header__remaining--amount">
+                    <div class="card__header-text">남은금액</div>
+                    <div class="card__header-remaining-amount">
                       <span>1492590</span>원
                     </div>
                   </div>
                 </div>
                 <div class="card__info">
-                  <div class="card__info__title">
+                  <div class="card__info-title">
                     될 때까지 ‘검찰개혁’⚡️검찰보고서로 함께 만들어요
                   </div>
-                  <progress class="card__progress" max="100" value="70">
+                  <progress
+                    class="card__info-progress progress"
+                    max="100"
+                    value="70">
                     70%
                   </progress>
                   <div class="card__value">
-                    <p class="card__value__current--amount">7333960원</p>
-                    <p class="card__value__goal--amount">8814750원 목표</p>
+                    <p class="card__value__current-amount">7333960원</p>
+                    <p class="card__value__goal-amount">8814750원 목표</p>
                   </div>
                   <div class="card__situation">
-                    <p class="card__situation__attainment">84% 달성</p>
-                    <p class="card__situation__remaining--day">5일 남음</p>
+                    <p class="card__situation-attainment">84% 달성</p>
+                    <p class="card__situation-remaining-day">5일 남음</p>
                   </div>
-                  <div class="card__btns">
-                    <button class="card__btns__heart">하트응원</button>
-                    <button class="card__btns__donation">기부하기</button>
+                  <div class="card__btn">
+                    <button class="card__btn-heart">하트응원</button>
+                    <button class="card__btn-donation">기부하기</button>
                   </div>
                 </div>
               </div>
             </a>
           </section>
           <!-- 섹션3 -->
-          <section class="content">
-            <h4 class="content__title">가장 많이 기부 중인 모금함</h4>
+          <section class="content fundraising">
+            <a href="#">
+              <h4 class="content__title">가장 많이 기부 중인 모금함</h4>
+            </a>
             <p class="content__desc">
               오늘, 기부 하셨나요? 당신의 마음도 함께 나눠주세요!
             </p>
-            <div class="cards">
-              <div class="card">
-                <h5 class="hidden">카드 리스트</h5>
-                <div class="card__image"></div>
-                <p class="card__title">
-                  동네 고양이와의 공존을 위하여! 길고양이 중성화 프로젝트
-                </p>
-                <p class="card__organization">한국고양이보호협회</p>
-                <progress class="card__progress" max="100" value="70">
-                  70%
-                </progress>
-                <div class="card__situation">
-                  <p class="card__situation__current--amount">9,134,751원</p>
-                  <p class="card__situation__attainment">46%</p>
-                </div>
-              </div>
-              <div class="card">
-                <h5 class="hidden">카드 리스트</h5>
-                <div class="card__image"></div>
-                <p class="card__title">
-                  동네 고양이와의 공존을 위하여! 길고양이 중성화 프로젝트
-                </p>
-                <p class="card__organization">한국고양이보호협회</p>
-                <progress class="card__progress" max="100" value="70">
-                  70%
-                </progress>
-                <div class="card__situation">
-                  <p class="card__situation__current--amount">9,134,751원</p>
-                  <p class="card__situation__attainment">46%</p>
-                </div>
-              </div>
-              <div class="card">
-                <h5 class="hidden">카드 리스트</h5>
-                <div class="card__image"></div>
-                <p class="card__title">
-                  동네 고양이와의 공존을 위하여! 길고양이 중성화 프로젝트
-                </p>
-                <p class="card__organization">한국고양이보호협회</p>
-                <progress class="card__progress" max="100" value="70">
-                  70%
-                </progress>
-                <div class="card__situation">
-                  <p class="card__situation__current--amount">9,134,751원</p>
-                  <p class="card__situation__attainment">46%</p>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- 섹션4 -->
-          <section class="content">
-            <h4 class="content__title">마지막 기부자를 찾습니다</h4>
-            <p class="content__desc">목표 달성까지 얼마 남지 않았어요!</p>
-            <a href="#">
-              <div class="card time">
-                <div class="card__image">
-                  <div class="card__header">
-                    <div class="card__header__time">22:47:57</div>
-                  </div>
-                </div>
-                <div class="card__info">
-                  <div class="card__info__title">
-                    될 때까지 ‘검찰개혁’⚡️검찰보고서로 함께 만들어요
-                  </div>
+            <ul class="card__list">
+              <li class="card__item">
+                <a href="#" class="card__link">
+                  <h5 class="hidden">카드 리스트</h5>
+                  <div class="card__image"></div>
+                  <p class="card__title">
+                    동네 고양이와의 공존을 위하여! 길고양이 중성화 프로젝트
+                  </p>
+                  <p class="card__organization">한국고양이보호협회</p>
                   <progress class="card__progress" max="100" value="70">
                     70%
                   </progress>
+                  <div class="card__situation">
+                    <p class="card__situation-current-amount">9,134,751원</p>
+                    <p class="card__situation-attainment">46%</p>
+                  </div>
+                </a>
+              </li>
+              <li class="card__item">
+                <a href="#" class="card__link">
+                  <h5 class="hidden">카드 리스트</h5>
+                  <div class="card__image"></div>
+                  <p class="card__title">
+                    동네 고양이와의 공존을 위하여! 길고양이 중성화 프로젝트
+                  </p>
+                  <p class="card__organization">한국고양이보호협회</p>
+                  <progress class="card__progress" max="100" value="70">
+                    70%
+                  </progress>
+                  <div class="card__situation">
+                    <p class="card__situation-current-amount">9,134,751원</p>
+                    <p class="card__situation-attainment">46%</p>
+                  </div>
+                </a>
+              </li>
+              <li class="card__item">
+                <a href="#" class="card__link">
+                  <h5 class="hidden">카드 리스트</h5>
+                  <div class="card__image"></div>
+                  <p class="card__title">
+                    동네 고양이와의 공존을 위하여! 길고양이 중성화 프로젝트
+                  </p>
+                  <p class="card__organization">한국고양이보호협회</p>
+                  <progress class="card__progress" max="100" value="70">
+                    70%
+                  </progress>
+                  <div class="card__situation">
+                    <p class="card__situation-current-amount">9,134,751원</p>
+                    <p class="card__situation-attainment">46%</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <!-- 섹션4 -->
+          <section class="content time-limit">
+            <h4 class="content__title">시간이 얼마 남지 않았어요!</h4>
+            <p class="content__desc">망설이면 끝! 조금만 더 힘을 보태주세요.</p>
+            <a href="#">
+              <div class="card">
+                <div class="card__image">
+                  <div class="card__header">
+                    <div class="card__header-time">22:47:57</div>
+                  </div>
+                </div>
+                <div class="card__info">
+                  <div class="card__info-title">
+                    될 때까지 ‘검찰개혁’⚡️검찰보고서로 함께 만들어요
+                  </div>
+                  <progress
+                    class="card__info-progress progress"
+                    max="100"
+                    value="70">
+                    70%
+                  </progress>
                   <div class="card__value">
-                    <p class="card__value__current--amount">7333960원</p>
-                    <p class="card__value__goal--amount">8814750원 목표</p>
+                    <p class="card__value__current-amount">7333960원</p>
+                    <p class="card__value__goal-amount">8814750원 목표</p>
                   </div>
                   <div class="card__situation">
-                    <p class="card__situation__attainment">84% 달성</p>
-                    <p class="card__situation__remaining--day">5일 남음</p>
+                    <p class="card__situation-attainment">84% 달성</p>
+                    <p class="card__situation-remaining-day">5일 남음</p>
                   </div>
-                  <div class="card__btns">
-                    <button class="card__btns__heart">하트응원</button>
-                    <button class="card__btns__donation">기부하기</button>
+                  <div class="card__btn">
+                    <button class="card__btn-heart">하트응원</button>
+                    <button class="card__btn-donation">기부하기</button>
                   </div>
                 </div>
               </div>
             </a>
           </section>
           <!-- 섹션5 -->
-          <section class="content">
-            <h4 class="content__title">가장 많이 기부 중인 모금함</h4>
+          <section class="content fundraising-tag">
+            <h4 class="content__title">태그로 보는 모금함</h4>
             <ul class="content__tags">
               <li class="content__tag"><a href="#"># 한부모가정</a></li>
               <li class="content__tag"><a href="#"># 한부모가정</a></li>
               <li class="content__tag"><a href="#"># 한부모가정</a></li>
               <li class="content__tag"><a href="#"># 한부모가정</a></li>
             </ul>
-            <div class="cards">
-              <div class="card">
-                <h5 class="hidden">카드 리스트</h5>
-                <div class="card__image"></div>
-                <p class="card__title">
-                  동네 고양이와의 공존을 위하여! 길고양이 중성화 프로젝트
-                </p>
-                <p class="card__organization">한국고양이보호협회</p>
-                <progress class="card__progress" max="100" value="70">
-                  70%
-                </progress>
-                <div class="card__situation">
-                  <p class="card__situation__current--amount">9,134,751원</p>
-                  <p class="card__situation__attainment">46%</p>
-                </div>
-              </div>
-              <div class="card">
-                <h5 class="hidden">카드 리스트</h5>
-                <div class="card__image"></div>
-                <p class="card__title">
-                  동네 고양이와의 공존을 위하여! 길고양이 중성화 프로젝트
-                </p>
-                <p class="card__organization">한국고양이보호협회</p>
-                <progress class="card__progress" max="100" value="70">
-                  70%
-                </progress>
-                <div class="card__situation">
-                  <p class="card__situation__current--amount">9,134,751원</p>
-                  <p class="card__situation__attainment">46%</p>
-                </div>
-              </div>
-              <div class="card">
-                <h5 class="hidden">카드 리스트</h5>
-                <div class="card__image"></div>
-                <p class="card__title">
-                  동네 고양이와의 공존을 위하여! 길고양이 중성화 프로젝트
-                </p>
-                <p class="card__organization">한국고양이보호협회</p>
-                <progress class="card__progress" max="100" value="70">
-                  70%
-                </progress>
-                <div class="card__situation">
-                  <p class="card__situation__current--amount">9,134,751원</p>
-                  <p class="card__situation__attainment">46%</p>
-                </div>
-              </div>
-            </div>
+            <ul class="card__list">
+              <li class="card__item">
+                <a href="#" class="card__link">
+                  <h5 class="hidden">카드 리스트</h5>
+                  <div class="card__image"></div>
+                  <p class="card__title">
+                    동네 고양이와의 공존을 위하여! 길고양이 중성화 프로젝트
+                  </p>
+                  <p class="card__organization">한국고양이보호협회</p>
+                  <progress class="card__progress" max="100" value="70">
+                    70%
+                  </progress>
+                  <div class="card__situation">
+                    <p class="card__situation-current-amount">9,134,751원</p>
+                    <p class="card__situation-attainment">46%</p>
+                  </div>
+                </a>
+              </li>
+              <li class="card__item">
+                <a href="#" class="card__link">
+                  <h5 class="hidden">카드 리스트</h5>
+                  <div class="card__image"></div>
+                  <p class="card__title">
+                    동네 고양이와의 공존을 위하여! 길고양이 중성화 프로젝트
+                  </p>
+                  <p class="card__organization">한국고양이보호협회</p>
+                  <progress class="card__progress" max="100" value="70">
+                    70%
+                  </progress>
+                  <div class="card__situation">
+                    <p class="card__situation-current-amount">9,134,751원</p>
+                    <p class="card__situation-attainment">46%</p>
+                  </div>
+                </a>
+              </li>
+              <li class="card__item">
+                <a href="#" class="card__link">
+                  <h5 class="hidden">카드 리스트</h5>
+                  <div class="card__image"></div>
+                  <p class="card__title">
+                    동네 고양이와의 공존을 위하여! 길고양이 중성화 프로젝트
+                  </p>
+                  <p class="card__organization">한국고양이보호협회</p>
+                  <progress class="card__progress" max="100" value="70">
+                    70%
+                  </progress>
+                  <div class="card__situation">
+                    <p class="card__situation-current-amount">9,134,751원</p>
+                    <p class="card__situation-attainment">46%</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
           </section>
           <!-- 섹션6 -->
-          <section class="card__news">
-            <a href="#">
+          <section class="card-slide">
+            <a href="#" class="content__link">
               <div class="content__image"></div>
               <div class="content__info">
                 <p class="content__tag"># 모두의행동</p>
@@ -297,8 +317,8 @@
             </a>
           </section>
           <!-- 섹션7 -->
-          <section class="card__news">
-            <a href="#">
+          <section class="card-news">
+            <a href="#" class="content__link">
               <div class="content__image"></div>
               <div class="content__info">
                 <p class="content__tag"># 우리사회</p>
@@ -317,8 +337,8 @@
                   70%
                 </progress>
                 <div class="card__situation">
-                  <p class="card__situation__current--amount">9,134,751원</p>
-                  <p class="card__situation__attainment">46%</p>
+                  <p class="card__situation-current-amount">9,134,751원</p>
+                  <p class="card__situation-attainment">46%</p>
                 </div>
               </div>
             </a>
