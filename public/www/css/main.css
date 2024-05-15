@@ -1,16 +1,14 @@
 .main {
   margin-top: 100px;
 }
-.main article {
+.main .main__left {
   width: 700px;
   display: flex;
   gap: 30px;
   flex-direction: column;
 }
-.main aside {
+.main .aside {
   width: 360px;
-  min-height: 50px;
-  background-color: #fff;
 }
 
 section {
@@ -312,4 +310,11 @@ section {
   align-self: flex-start;
   border: 1px solid #000;
   padding: 5px 20px;
+}
+
+@media (max-width: 768px) {
+  .main__inner {
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -88,7 +88,7 @@
       <h2 class="hidden">메인 영역</h2>
       <div class="main__inner inner">
         <!-- 왼쪽 컨텐츠 영역 -->
-        <article>
+        <article class="main__left">
           <h3 class="hidden">콘텐츠 영역</h3>
           <!-- 섹션1 -->
           <section class="section__top">
@@ -345,19 +345,28 @@
           </section>
         </article>
         <!-- 오른쪽 컨텐츠 영역 -->
-        <aside>
+        <aside class="aside">
           <h3 class="hidden">사이드 영역</h3>
           <article class="aside__content">
             <h4 class="hidden">우리가 같이만든 변화들</h4>
-            <div>
-              <div class="togetchange">
-                <p class="togetchange__title">우리가 같이만든 변화들</p>
-                <p class="togetchange__today">2024.05.15 기준</p>
+            <div class="together">
+              <div class="together__change">
+                <p class="together__change__title">
+                  우리가 <br />
+                  같이만든 변화들
+                </p>
+                <p class="together__change__today">2024.05.15 기준</p>
+                <div class="together__change__total">
+                  <div class="together__change__total-text">총 기부금</div>
+                  <div class="together__change__total-value">
+                    74,343,033,710원
+                  </div>
+                </div>
               </div>
-              <div class="review">
-                <p class="review__tag">따뜻한 후기</p>
-                <p class="review__title">아이들의 첫 번째 놀이동산</p>
-                <p class="review__desc">
+              <div class="together__review">
+                <p class="together__review__tag">따뜻한 후기</p>
+                <p class="together__review__title">아이들의 첫 번째 놀이동산</p>
+                <p class="together__review__desc">
                   따뜻한 날에 따뜻한 마음 모아 이든지역아동센터 친구들이
                   놀이동산에 다녀올 수 있었습니다. 운영비 없는 신규시설에서
                   놀이동산에 갈 수 있다는 것은 따뜻한 손길이 있었기에 가능한
@@ -376,35 +385,51 @@
           </article>
           <article class="aside__content">
             <h4 class="hidden">오늘 너의 마음날씨는 어때?</h4>
+            <p class="aside__content-title">오늘 너의 마음날씨는 어때?</p>
             <div class="heartweather">
-              <p class="heartweather__title">오늘 너의 마음날씨는 어때?</p>
-              <ul class="cards">
-                <li class="card">
-                  <div class="card__image"></div>
-                  <div class="card__info">
-                    <div class="card__title">나는 외향적일까? 내향적일까?</div>
-                    <div class="card__members">383,040명 참여</div>
+              <ul class="heartweather__list">
+                <li class="heartweather__item">
+                  <div class="heartweather__item-image"></div>
+                  <div class="heartweather__item-info">
+                    <div class="heartweather__item-info__title">
+                      나는 외향적일까? 내향적일까?
+                    </div>
+                    <div class="heartweather__item-info__members">
+                      383,040명 참여
+                    </div>
                   </div>
                 </li>
-                <li class="card">
-                  <div class="card__image"></div>
-                  <div class="card__info">
-                    <div class="card__title">나는 외향적일까? 내향적일까?</div>
-                    <div class="card__members">383,040명 참여</div>
+                <li class="heartweather__item">
+                  <div class="heartweather__item-image"></div>
+                  <div class="heartweather__item-info">
+                    <div class="heartweather__item-info__title">
+                      나는 외향적일까? 내향적일까?
+                    </div>
+                    <div class="heartweather__item-info__members">
+                      383,040명 참여
+                    </div>
                   </div>
                 </li>
-                <li class="card">
-                  <div class="card__image"></div>
-                  <div class="card__info">
-                    <div class="card__title">나는 외향적일까? 내향적일까?</div>
-                    <div class="card__members">383,040명 참여</div>
+                <li class="heartweather__item">
+                  <div class="heartweather__item-image"></div>
+                  <div class="heartweather__item-info">
+                    <div class="heartweather__item-info__title">
+                      나는 외향적일까? 내향적일까?
+                    </div>
+                    <div class="heartweather__item-info__members">
+                      383,040명 참여
+                    </div>
                   </div>
                 </li>
-                <li class="card">
-                  <div class="card__image"></div>
-                  <div class="card__info">
-                    <div class="card__title">나는 외향적일까? 내향적일까?</div>
-                    <div class="card__members">383,040명 참여</div>
+                <li class="heartweather__item">
+                  <div class="heartweather__item-image"></div>
+                  <div class="heartweather__item-info">
+                    <div class="heartweather__item-info__title">
+                      나는 외향적일까? 내향적일까?
+                    </div>
+                    <div class="heartweather__item-info__members">
+                      383,040명 참여
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -412,36 +437,36 @@
           </article>
           <article class="aside__content">
             <h4 class="hidden">놓치면 아까운 같이가치 소식</h4>
+            <p class="aside__content-title">놓치면 아까운 같이가치 소식</p>
             <div class="news">
-              <p class="news__title">놓치면 아까운 같이가치 소식</p>
               <ul class="news__list">
                 <li class="news__item">
-                  <p class="news__item__title">
+                  <p class="news__item-title">
                     카카오같이가치 카카오톡 채널을 추가해보세요!
                   </p>
-                  <div>el</div>
-                  <div class="news__item--link"></div>
+                  <div>→</div>
+                  <div class="news__item-link"></div>
                 </li>
                 <li class="news__item">
-                  <p class="news__item__title">
+                  <p class="news__item-title">
                     카카오같이가치 카카오톡 채널을 추가해보세요!
                   </p>
-                  <div>el</div>
-                  <div class="news__item--link"></div>
+                  <div>→</div>
+                  <div class="news__item-link"></div>
                 </li>
                 <li class="news__item">
-                  <p class="news__item__title">
+                  <p class="news__item-title">
                     카카오같이가치 카카오톡 채널을 추가해보세요!
                   </p>
-                  <div>el</div>
-                  <div class="news__item--link"></div>
+                  <div>→</div>
+                  <div class="news__item-link"></div>
                 </li>
                 <li class="news__item">
-                  <p class="news__item__title">
+                  <p class="news__item-title">
                     카카오같이가치 카카오톡 채널을 추가해보세요!
                   </p>
-                  <div>el</div>
-                  <div class="news__item--link"></div>
+                  <div>→</div>
+                  <div class="news__item-link"></div>
                 </li>
               </ul>
             </div>
