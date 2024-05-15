@@ -1,4 +1,4 @@
-header {
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,26 +8,37 @@ header {
   background-color: #fff;
 }
 
-h1 a {
+.header__logo a {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.nav__list {
+.header__nav-list {
   height: 100%;
   display: flex;
   gap: 22px;
   letter-spacing: -0.1px;
 }
-.nav__list li {
+.header__nav-item {
   position: relative;
 }
-.nav__list li:nth-child(2) {
-  position: relative;
+.header__nav-item a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 14px;
 }
-.nav__list li:nth-child(2) .newbadge {
+.header__nav-item.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  border-bottom: 2px solid rgb(57, 57, 57);
+  z-index: 1;
+}
+.header__nav-item .newbadge {
   position: absolute;
   top: 35%;
   right: 10%;
@@ -36,59 +47,45 @@ h1 a {
   background-color: rgb(255, 90, 114);
   border-radius: 50%;
 }
-.nav__list li a {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 14px;
-}
-.nav__list .active::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  width: 100%;
-  border-bottom: 2px solid rgb(57, 57, 57);
-  z-index: 1;
-}
 
-.header__icons {
+.header__icon-list {
   display: flex;
   gap: 10px;
   align-items: center;
   justify-content: center;
 }
-.header__icons li:nth-child(1) img {
+.header__icon-item.avatar img {
   width: 24px;
   border-radius: 8px;
 }
-.header__icons li a {
+.header__icon-item a {
   display: flex;
   align-items: center;
   padding: 10px;
 }
 
 @media (max-width: 768px) {
-  header {
+  .header {
     height: 92px;
     background-color: orange;
   }
-  header .inner {
+  .header .inner {
     display: flex;
     flex-direction: column-reverse;
     background-color: #fff;
   }
-  header h1 {
+  .header .header__logo {
     position: absolute;
     top: 30%;
     left: 50%;
     height: 55px;
     transform: translate(-50%, -50%);
   }
-  .nav__list {
+  .header__nav-list {
     display: flex;
     justify-content: space-between;
   }
-  .header__icons {
+  .header__icon-list {
     height: 55px;
     justify-content: space-between;
     flex-direction: row-reverse;
