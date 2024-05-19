@@ -46,6 +46,9 @@
 .together__review {
   height: 280px;
   padding: 31px 26px 46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .together__review__tag {
   font-size: 13px;
@@ -55,6 +58,7 @@
 }
 .together__review__desc {
   font-size: 14px;
+  line-height: 2;
 }
 
 .badge {
@@ -63,6 +67,7 @@
 }
 .badge__title {
   font-size: 20px;
+  line-height: 2;
 }
 .badge__desc {
   font-size: 14px;
@@ -78,13 +83,74 @@
 .heartweather {
   height: 387px;
 }
+.heartweather__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+}
+.heartweather__item {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #eee;
+  width: 100%;
+}
+.heartweather__item-image {
+  width: 60px;
+  height: 60px;
+  background-color: #ddd;
+}
+.heartweather__item-info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 10px;
+}
 .heartweather__item-info__title {
+  display: flex;
+  align-items: center;
   font-size: 15px;
+  height: 100%;
 }
 .heartweather__item-info__members {
+  display: flex;
+  align-items: center;
   font-size: 13px;
+  height: 100%;
 }
 
 .news {
-  height: 420px;
+  height: 420px !important;
+}
+.news__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 30px;
+}
+.news__item {
+  width: 152px;
+  height: 152px;
+  background-color: rgb(255, 232, 0);
+  border-radius: 4px;
+}
+.news__item-title {
+  font-size: 15px;
+  line-height: 2.5;
+}
+.news__item-link {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.news__item-arrow {
+  position: absolute;
+  padding: 5px;
+  margin: 10px;
+  bottom: 0;
+  right: 0;
+  border: 1px solid #fff;
+  border-radius: 50%;
 }
