@@ -2,6 +2,9 @@
   &__content {
     border-radius: 12px;
     background-color: #fff;
+    &-title {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -82,6 +85,9 @@
 
   &:nth-child(5) {
     height: 420px;
+    @media (max-width: 768px) {
+      height: 793px;
+    }
   }
 
   &-title {
@@ -129,6 +135,8 @@
 }
 
 .news {
+  width: 100%;
+  height: 100%;
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -140,6 +148,16 @@
     height: 152px;
     background-color: rgb(255, 232, 0);
     border-radius: 4px;
+
+    @media (max-width: 768px) {
+      width: 342px;
+      // width: 100%;
+      width: 50%;
+      height: 342px;
+      height: 50%;
+      flex: 1;
+      // height: 100%;
+    }
 
     &-title {
       font-size: 15px;

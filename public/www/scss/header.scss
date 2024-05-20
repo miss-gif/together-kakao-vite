@@ -5,9 +5,18 @@
     align-items: center;
     justify-content: center;
   }
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    height: 55px;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .header__nav {
+  color: #444;
+  font-family: "KakaoBig Bold";
   &-list {
     height: 100%;
     display: flex;
@@ -17,19 +26,24 @@
   &-item {
     position: relative;
     a {
+      position: relative;
       height: 100%;
       display: flex;
       align-items: center;
       padding: 14px;
     }
-    &.active::after {
-      content: "";
-      position: absolute;
-      bottom: -1px;
-      width: 100%;
-      border-bottom: 2px solid rgb(57, 57, 57);
-      z-index: 1;
+    &.active {
+      font-family: "KakaoBig Bold";
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        border-bottom: 2px solid rgb(57, 57, 57);
+        z-index: 1;
+      }
     }
+
     .newbadge {
       position: absolute;
       top: 35%;
@@ -38,6 +52,10 @@
       height: 4px;
       background-color: rgb(255, 90, 114);
       border-radius: 50%;
+      @media (max-width: 768px) {
+        top: 1px;
+        right: -1px;
+      }
     }
   }
 }
@@ -65,29 +83,42 @@
 // 헤더 반응형
 @media (max-width: 768px) {
   .header {
-    .inner {
+    &__inner {
       display: flex;
       flex-direction: column-reverse;
       background-color: #fff;
     }
-    .header__logo {
-      position: absolute;
-      top: 30%;
-      left: 50%;
-      height: 55px;
-      transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .header__nav {
+    color: #202020;
+    font-family: "KakaoBig Regular";
+    &-list {
+      gap: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-item {
+      a {
+        padding: 5px 4px 9px;
+      }
     }
   }
-  .header__nav-list {
-    display: flex;
-    justify-content: space-between;
-  }
-  .header__icon-list {
-    height: 55px;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-  }
-  .avatar {
-    display: none;
+  .header__icon {
+    &-list {
+      height: 55px;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+    &-item {
+      &.avatar {
+        display: none;
+      }
+      a {
+        padding: 8px 0;
+      }
+    }
   }
 }
