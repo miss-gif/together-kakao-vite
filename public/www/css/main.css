@@ -1,16 +1,3 @@
-.main {
-  margin-top: 100px;
-}
-.main .main__left {
-  width: 700px;
-  display: flex;
-  gap: 30px;
-  flex-direction: column;
-}
-.main .aside {
-  width: 360px;
-}
-
 section {
   border-radius: 12px;
 }
@@ -21,7 +8,8 @@ section {
 
 .content {
   padding: 24px 30px 32px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
   background-color: #fff;
   border-radius: 12px;
 }
@@ -39,8 +27,12 @@ section {
   letter-spacing: -0.1px;
 }
 .last-donor .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 20px;
 }
 .last-donor .card__image {
@@ -52,36 +44,61 @@ section {
 }
 .last-donor .card__header {
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 10px;
   background-color: #202020;
   color: #c9c9c9;
 }
 .last-donor .card__info {
   width: 335px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .last-donor .card__info-title {
   font-size: 18px;
   line-height: 1.33;
 }
 .last-donor .card__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 14px;
 }
 .last-donor .card__situation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 12px;
 }
 .last-donor .card__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 16px;
   font-size: 14px;
 }
@@ -93,13 +110,20 @@ section {
   border-radius: 6px;
 }
 .fundraising .card__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
 .fundraising .card__item {
   width: 33.33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .fundraising .card__link {
   margin-top: 20px;
@@ -132,8 +156,12 @@ section {
 }
 
 .time-limit .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 20px;
 }
 .time-limit .card__image {
@@ -145,36 +173,61 @@ section {
 }
 .time-limit .card__header {
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0 10px;
   background-color: #202020;
   color: #c9c9c9;
 }
 .time-limit .card__info {
   width: 335px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .time-limit .card__info-title {
   font-size: 18px;
   line-height: 1.33;
 }
 .time-limit .card__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 14px;
 }
 .time-limit .card__situation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 12px;
 }
 .time-limit .card__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 16px;
   font-size: 14px;
 }
@@ -186,6 +239,8 @@ section {
   border-radius: 6px;
 }
 .fundraising-tag .content__tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10px;
   margin-top: 10px;
@@ -198,13 +253,20 @@ section {
   border-radius: 999px;
 }
 .fundraising-tag .card__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
 .fundraising-tag .card__item {
   width: 33.33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .fundraising-tag .card__link {
   margin-top: 20px;
@@ -237,6 +299,8 @@ section {
 }
 
 .card-slide .content__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   border-radius: 12px;
@@ -244,17 +308,26 @@ section {
 .card-slide .content__link .content__image {
   width: 250px;
   height: 250px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   overflow: hidden;
   background: url("../images/c1400x960.jpg") no-repeat center/cover;
 }
 .card-slide .content__link .content__info {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 24px 30px 32px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
   background-color: #fff;
 }
 .card-slide .content__link .content__desc {
@@ -269,12 +342,15 @@ section {
   color: rgb(187, 107, 255);
   font-size: 13px;
   letter-spacing: -0.3px;
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   border: 1px solid #000;
   padding: 5px 20px;
 }
 
 .card-news .content__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   border-radius: 12px;
@@ -282,17 +358,26 @@ section {
 .card-news .content__link .content__image {
   width: 250px;
   height: 250px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   overflow: hidden;
   background: url("../images/c1400x960.jpg") no-repeat center/cover;
 }
 .card-news .content__link .content__info {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 24px 30px 32px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
   background-color: #fff;
 }
 .card-news .content__link .content__desc {
@@ -307,14 +392,20 @@ section {
   color: rgb(187, 107, 255);
   font-size: 13px;
   letter-spacing: -0.3px;
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   border: 1px solid #000;
   padding: 5px 20px;
 }
 
 @media (max-width: 768px) {
   .main__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }

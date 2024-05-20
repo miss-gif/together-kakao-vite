@@ -18,11 +18,11 @@ navTargetItems.forEach(item => {
 // 모바일 사이즈에서 스크롤 시 버튼 영역 사라지게
 function handleScroll() {
   const header = document.querySelector(".header");
-  const maxScroll = 50; // Maximum scroll distance
+  const maxScroll = 48; // Maximum scroll distance
   const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
   if (scrollTop > maxScroll) {
-    header.style.top = "-50px";
+    header.style.top = "-48px";
   } else {
     header.style.top = `-${scrollTop}px`;
   }
