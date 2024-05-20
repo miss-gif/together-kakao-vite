@@ -65,3 +65,33 @@
 .footer__info .sns__item img {
   width: 20px;
 }
+
+small {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .footer__inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .corp__item:first-child {
+    display: none;
+  }
+  small {
+    display: block;
+  }
+}

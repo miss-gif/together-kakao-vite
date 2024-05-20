@@ -1,12 +1,13 @@
 .inner {
   width: 100%;
-  max-width: 1120px;
+  max-width: 1140px;
   height: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  padding: 0 10px;
   @media (max-width: 768px) {
-    max-width: 728px;
+    max-width: 768px;
     padding: 0 20px;
   }
 }
@@ -51,6 +52,8 @@
   }
   &__right {
     width: 360px;
+    display: flex;
+    flex-direction: column;
     gap: 30px;
     @media (max-width: 768px) {
       margin-top: 20px;

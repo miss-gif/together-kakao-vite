@@ -1,7 +1,4 @@
 .aside {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
   &__content {
     border-radius: 12px;
     background-color: #fff;
@@ -78,13 +75,21 @@
   &:nth-child(5) {
     padding: 30px 26px;
   }
+
+  &:nth-child(4) {
+    height: 387px;
+  }
+
+  &:nth-child(5) {
+    height: 420px;
+  }
+
   &-title {
     font-size: 20px;
   }
 }
 
 .heartweather {
-  height: 387px;
   &__list {
     display: flex;
     flex-direction: column;
@@ -124,7 +129,6 @@
 }
 
 .news {
-  height: 420px !important;
   &__list {
     display: flex;
     flex-wrap: wrap;
