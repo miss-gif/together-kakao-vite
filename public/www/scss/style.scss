@@ -1,0 +1,16 @@
+// 초록
+@use "./abstracts/variable";
+
+// 베이스
+@use "./base/reset";
+@use "./base/typography";
+@use "./base/common";
+
+// 레이아웃
+@use "./layout/layout.scss";
+@use "./layout/header.scss";
+@use "./layout/main.scss";
+@use "./layout/aside.scss";
+@use "./layout/footer.scss";
+
+// 컴포넌트

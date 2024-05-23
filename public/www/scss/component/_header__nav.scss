@@ -1,0 +1,62 @@
+.header__nav {
+  color: var(--gray-400);
+  font-family: "KakaoBig Bold";
+  &-list {
+    height: 100%;
+    display: flex;
+    gap: 22px;
+    letter-spacing: -0.1px;
+  }
+  &-item {
+    position: relative;
+    a {
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 14px;
+    }
+    &.active {
+      color: var(--mainBlack);
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        border-bottom: 2px solid rgb(57, 57, 57);
+        z-index: 1;
+      }
+    }
+
+    .newbadge {
+      position: absolute;
+      top: 35%;
+      right: 10%;
+      width: 4px;
+      height: 4px;
+      background-color: var(--red);
+      border-radius: 50%;
+      @media (max-width: 768px) {
+        top: 1px;
+        right: -1px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header__nav {
+    color: var(--mainBlack);
+    font-family: "KakaoBig Regular";
+    &-list {
+      gap: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-item {
+      a {
+        padding: 5px 4px 9px;
+      }
+    }
+  }
+}

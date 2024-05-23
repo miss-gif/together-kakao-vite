@@ -1,0 +1,33 @@
+/* Typography  */
+:root {
+  font-size: 62.5%; /* 10px */
+}
+
+body {
+  font-size: 1.6rem;
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+  }
+}
+
+@font-face {
+  font-family: "KakaoBig regular";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src:
+    url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff2)
+      format("woff2"),
+    url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "KakaoBig Bold";
+  font-style: normal;
+  font-display: swap;
+  src:
+    url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff2)
+      format("woff2"),
+    url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff)
+      format("woff");
+}

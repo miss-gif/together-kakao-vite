@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* common*/
+body {
+  background-color: #f7f7f7;
+  font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic",
+    "맑은 고딕", dotum, 돋움, sans-serif;
+}
+
+.bold {
+  font-family: "KakaoBig Bold";
+}
+
+.hidden {
+  position: absolute;
+  top: auto;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+progress {
+  width: 100%;
+  height: 4px;
+  appearance: none;
+  &::-webkit-progress-bar {
+    overflow: hidden;
+    background-color: rgb(233, 233, 233);
+    border-radius: 50px;
+  }
+  &::-webkit-progress-value {
+    background-color: #ff4050;
+  }
+}
