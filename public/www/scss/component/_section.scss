@@ -1,0 +1,26 @@
+.section {
+  border-radius: 12px;
+  padding: 24px 30px 32px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
+  background-color: var(--white);
+  &__title {
+    font-size: 20px;
+    color: var(--mainBlack);
+    font-family: "KakaoBig Bold";
+    letter-spacing: -0.3px;
+  }
+  &__text {
+    font-size: 15px;
+    color: var(--gray-600);
+  }
+  &__desc {
+    font-size: 14px;
+    letter-spacing: -0.1px;
+  }
+}
+
+@include tablet {
+  .section {
+    padding: 26px 20px 30px;
+  }
+}

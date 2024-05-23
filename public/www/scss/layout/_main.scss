@@ -1,34 +1,5 @@
-section {
+.section__banner img {
   border-radius: 12px;
-}
-
-.section__top img {
-  border-radius: 12px;
-}
-
-.content {
-  padding: 24px 30px 32px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
-  background-color: #fff;
-  border-radius: 12px;
-  @media (max-width: 768px) {
-    padding: 26px 20px 30px;
-  }
-  &__title {
-    font-size: 20px;
-    line-height: 1.4;
-    color: #202020;
-    letter-spacing: -0.3px;
-  }
-  &__desc {
-    margin-top: 4px;
-    font-size: 15px;
-    line-height: 1.6;
-    color: #666;
-    letter-spacing: -0.1px;
-  }
-  &__link {
-  }
 }
 
 // 섹션2

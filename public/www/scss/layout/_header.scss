@@ -1,6 +1,4 @@
-@use "../component/header__logo";
-@use "../component/header__nav";
-@use "../component/header__icon";
+/* header */
 
 .header {
   position: sticky;
@@ -22,7 +20,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@include tablet {
   .header {
     height: 92px;
   }

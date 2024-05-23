@@ -36,7 +36,8 @@
       height: 4px;
       background-color: var(--red);
       border-radius: 50%;
-      @media (max-width: 768px) {
+
+      @include tablet {
         top: 1px;
         right: -1px;
       }
@@ -44,7 +45,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@include tablet {
   .header__nav {
     color: var(--mainBlack);
     font-family: "KakaoBig Regular";

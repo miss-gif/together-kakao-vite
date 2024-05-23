@@ -7,7 +7,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@include tablet {
   .header__logo {
     position: absolute;
     top: 30%;
