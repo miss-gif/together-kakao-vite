@@ -13,6 +13,8 @@
 @import "./layout/layout.scss";
 @import "./layout/header.scss";
 @import "./layout/main.scss";
+@import "./layout/main__left";
+@import "./layout/main__right";
 @import "./layout/aside.scss";
 @import "./layout/footer.scss";
 
@@ -20,7 +22,15 @@
 @import "./component/header__logo";
 @import "./component/header__nav";
 @import "./component/header__icon";
+@import "./component/my-menu";
 
 @import "./component/section";
+@import "./component/fundraising-last-donor";
+@import "./component/fundraising-best";
+@import "./component/fundraising-tag-view";
+@import "./component/fundraising-time-limit";
+@import "./component/fundraising-time-limit";
+@import "./component/card-slide.scss";
+@import "./component/card-news";
 
 @import "./component/footer__info";

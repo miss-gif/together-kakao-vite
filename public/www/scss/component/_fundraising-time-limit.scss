@@ -1,0 +1,88 @@
+// 섹션4
+.fundraising-time-limit {
+  .card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    &__image {
+      width: 280px;
+      height: 168px;
+      overflow: hidden;
+      background: url("../images/c1400x960.jpg") no-repeat center / cover;
+      border-radius: 8px;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+    &__header {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+      background-color: #202020;
+      color: #c9c9c9;
+    }
+    &__info {
+      width: 335px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      &-title {
+        font-size: 18px;
+        line-height: 1.33;
+      }
+      &-progress {
+      }
+    }
+
+    &__value {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      &__current-amount {
+      }
+      &__goal-amount {
+      }
+    }
+    &__situation {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      &-attainment {
+      }
+      &-remaining-day {
+      }
+    }
+    &__btn {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px;
+      font-size: 14px;
+      @media (max-width: 768px) {
+        gap: 9px;
+      }
+      button {
+        width: 163px;
+        height: 40px;
+        border: 1px solid #c9c9c9;
+        letter-spacing: -0.1px;
+        border-radius: 6px;
+        @media (max-width: 768px) {
+          width: 50%;
+        }
+      }
+      &-heart {
+      }
+      &-donation {
+      }
+    }
+  }
+}

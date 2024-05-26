@@ -1,0 +1,85 @@
+// 섹션5
+.fundraising-tag-view {
+  .content {
+    &__tags {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      .content__tag {
+        padding: 10px 15px;
+        background-color: #000;
+        font-size: 14px;
+        color: #fff;
+        border-radius: 999px;
+      }
+    }
+  }
+  .card {
+    &__list {
+      display: flex;
+      gap: 20px;
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+    &__item {
+      width: 33.33%;
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+    &__link {
+      margin-top: 20px;
+      @media (max-width: 768px) {
+        display: flex;
+      }
+    }
+    &__image {
+      border-radius: 8px;
+      width: 100%;
+      height: 138px;
+      margin-bottom: 10px;
+      background: url("../images/c1400x960.jpg") no-repeat center / cover;
+      @media (max-width: 768px) {
+        max-width: 124px;
+        height: 86px;
+        margin-bottom: 0;
+        width: 100%;
+      }
+    }
+    &__info {
+      width: 100%;
+    }
+    &__title {
+      font-size: 14px;
+      line-height: 20px;
+      width: 100%;
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2; // 숫자로 줄 갯수를 조절
+    }
+    &__organization {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    &__progress {
+      margin: 6px 0;
+    }
+    &__situation {
+      // display: flex;
+      &-current-amount {
+        font-size: 12px;
+        line-height: 20px;
+      }
+      &-attainment {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+}

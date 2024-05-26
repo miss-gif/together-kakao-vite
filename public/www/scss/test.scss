@@ -1,14 +1,14 @@
-// body {
-//   height: 20000px;
-// }
+body {
+  height: 20000px;
+}
 
-// main {
-//   display: none;
-// }
+main {
+  display: none;
+}
 
-// footer {
-//   display: none;
-// }
+footer {
+  display: none;
+}
 
 /* test 코드 */
 .card__image {
@@ -17,4 +17,12 @@
 
 body {
   background-color: #f7f7f7;
+}
+
+.wrapper {
+  // overflow: hidden;
+}
+
+.main__right {
+  // display: none;
 }

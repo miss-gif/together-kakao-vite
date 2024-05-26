@@ -6,7 +6,10 @@
 
 body {
   font-size: 1.6rem;
-  @media (max-width: 768px) {
+  @include laptop {
+    font-size: 1.5rem;
+  }
+  @include tablet {
     font-size: 1.4rem;
   }
 }

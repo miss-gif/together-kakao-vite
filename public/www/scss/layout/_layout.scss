@@ -2,42 +2,15 @@
 
 .inner {
   width: 100%;
-  max-width: 1140px;
+  max-width: 114rem;
   height: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 0 10px;
-  @media (max-width: 768px) {
-    max-width: 768px;
-    padding: 0 20px;
-  }
-}
-
-.main {
-  margin-top: 30px;
-  @media (max-width: 768px) {
-    margin-top: 20px;
-  }
-  &__left {
-    width: 700px;
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-    @media (max-width: 768px) {
-      width: 100%;
-      gap: 20px;
-    }
-  }
-  &__right {
-    width: 360px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    @media (max-width: 768px) {
-      margin-top: 20px;
-      width: 100%;
-      gap: 20px;
-    }
+  padding: 0 1rem;
+  @include tablet {
+    max-width: 76.8rem;
+    min-width: 375px;
+    padding: 0 2rem;
   }
 }
