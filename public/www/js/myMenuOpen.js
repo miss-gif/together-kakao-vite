@@ -2,37 +2,23 @@ const myMenuBtn = document.getElementById("my-menu-btn");
 const myMenuWrap = document.querySelector(".my-menu-wrap");
 const myMenu = document.querySelector(".my-menu");
 
-// 창열기
-myMenuBtn.addEventListener("click", classAddOpen);
-function classAddOpen() {
-  myMenuWrap.classList.add("open");
-  document.body.classList.add("no-scroll");
+// 창열기 및 창닫기 함수
+function toggleMenu(isOpen) {
+  myMenuWrap.classList.toggle("open", isOpen);
+  document.body.classList.toggle("no-scroll", isOpen);
+  // myMenu.style.width = isOpen ? "250px" : "0";
+  myMenu.style.right = isOpen ? "0" : "-300px";
 }
+
+// 창열기
+myMenuBtn.addEventListener("click", () => toggleMenu(true));
 
 // 창닫기
 myMenuWrap.addEventListener("click", () => {
   if (myMenuWrap.classList.contains("open")) {
-    myMenuWrap.classList.remove("open");
-    document.body.classList.remove("no-scroll");
+    toggleMenu(false);
   }
 });
 
-// 제어
-myMenu.addEventListener("click", event => {
-  event.stopPropagation();
-});
-
-//
-//
-//
-//
-
-/* Set the width of the sidebar to 250px (show it) */
-function openNav() {
-  document.getElementById("mySidepanel").style.width = "250px";
-}
-
-/* Set the width of the sidebar to 0 (hide it) */
-function closeNav() {
-  document.getElementById("mySidepanel").style.width = "0";
-}
+// 메뉴 클릭 시 이벤트 전파 중지
+myMenu.addEventListener("click", event => event.stopPropagation());

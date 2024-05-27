@@ -97,3 +97,9 @@
 - header 영역 우측의 아이콘 그룹의 간격이 서로 동일하지 않은 부분을 개선함
 
 - main 영역 최상단 section 콘텐츠에 `overflow: hidden;` 사용으로 사라진 포커스를 개선함
+
+---
+
+# 수정해야할 과제
+
+bold의 font-weight가 2종이다. 400, 600

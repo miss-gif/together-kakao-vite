@@ -61,7 +61,7 @@
               </a>
             </li>
             <li class="header__icon-item" id="my-menu-btn">
-              <a href="#" class="openbtn" onclick="openNav()">
+              <a href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -85,25 +85,38 @@
         </div>
         <div class="my-menu-wrap">
           <div class="my-menu">
-            <div>아이디영역</div>
-            <div>버튼영역</div>
-            <div>같이기부</div>
-            <div>모두의행동</div>
-            <div>마음날씨</div>
-            <div>캠페인</div>
-            <div>같이가치소개</div>
-            <div>채널추가</div>
-            <div>로그아웃</div>
+            <div class="my-menu__login">
+              <a>로그인하세요</a>
+            </div>
+            <ul class="my-menu__btns">
+              <li class="my-menu__btn"><a href="#">MY</a></li>
+              <li class="my-menu__btn"><a href="#">알림</a></li>
+            </ul>
+            <ul class="my-menu__links">
+              <li class="my-menu__links__item">
+                <a href="#"><i></i>같이기부</a>
+              </li>
+              <li class="my-menu__links__item">
+                <a href="#"><i></i>모두의행동</a>
+              </li>
+              <li class="my-menu__links__item">
+                <a href="#"><i></i>마음날씨</a>
+              </li>
+              <li class="my-menu__links__item">
+                <a href="#"><i></i>캠페인</a>
+              </li>
+            </ul>
+            <ul class="my-menu__links__sub">
+              <li class="my-menu__links__sub__item">
+                <a href="">같이가치 소개</a>
+              </li>
+              <li class="my-menu__links__sub__item"><a href="">매거진</a></li>
+              <li class="my-menu__links__sub__item"><a href="">공지사항</a></li>
+              <li class="my-menu__links__sub__item"><a href="">모금제안</a></li>
+            </ul>
+            <div class="hidden">채널추가</div>
+            <div class="hidden">로그아웃</div>
           </div>
-        </div>
-        <div id="mySidepanel" class="sidepanel">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-            >&times;</a
-          >
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
         </div>
       </header>
       <!-- 메인 영역 -->

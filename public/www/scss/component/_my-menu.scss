@@ -1,82 +1,99 @@
+// 딤드 효과
 .my-menu-wrap {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
   width: 100%;
   height: 100vh;
   background-color: rgba($color: #000000, $alpha: 0.3);
-  transition: 300ms ease 0s;
+  z-index: -1;
   opacity: 0;
+  transition: 0.5s;
 }
 
 .open {
   opacity: 1;
-  z-index: 999;
+  z-index: 1;
 }
 
 .my-menu {
-  position: absolute;
-  z-index: 9999;
+  position: fixed;
   top: 0;
-  right: 0;
-  width: 300px;
-  height: 100vh;
+  right: -300px;
+  z-index: 1;
   background-color: #fff;
-}
-
-//
-//
-//
-
-/* The sidepanel menu */
-.sidepanel {
+  transition: 0.5s;
   height: 100vh;
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0;
-  right: 0;
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  padding: 30px;
+  max-width: 300px;
+  min-width: 280px;
 }
 
-/* The sidepanel links */
-.sidepanel a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidepanel a:hover {
-  color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidepanel .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/* Style the button that is used to open the sidepanel */
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-}
-
-.openbtn:hover {
-  background-color: #444;
+.my-menu {
+  &__login {
+    font-family: "KakaoBig Bold";
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  &__btns {
+    border-radius: 6px;
+    display: flex;
+    overflow: hidden;
+  }
+  &__btn {
+    position: relative;
+    font-family: "KakaoBig Bold";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: #444;
+    background-color: #f9f9f9;
+    font-size: 13px;
+    &:last-child::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      width: 1px;
+      height: 14px;
+      margin-top: -7px;
+      background-color: #e5e5e5;
+    }
+    a {
+      padding: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__links {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    &__item {
+      font-family: "KakaoBig Bold";
+      display: flex;
+      align-items: center;
+      height: 42px;
+    }
+  }
+  &__links__sub {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+      font-family: "KakaoBig Bold";
+      font-size: 14px;
+      width: 50%;
+      padding: 5px 0;
+    }
+  }
 }
