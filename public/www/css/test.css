@@ -1,16 +1,4 @@
 @charset "UTF-8";
-body {
-  height: 20000px;
-}
-
-main {
-  display: none;
-}
-
-footer {
-  display: none;
-}
-
 /* test 코드 */
 .card__image {
   border: 1px solid #000;
