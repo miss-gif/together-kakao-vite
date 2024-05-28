@@ -2,11 +2,23 @@ const myMenuBtn = document.getElementById("my-menu-btn");
 const myMenuWrap = document.querySelector(".my-menu-wrap");
 const myMenu = document.querySelector(".my-menu");
 
+let scrollPosition = 0;
+
 // 창열기 및 창닫기 함수
 function toggleMenu(isOpen) {
-  myMenuWrap.classList.toggle("open", isOpen);
-  document.body.classList.toggle("no-scroll", isOpen);
-  // myMenu.style.width = isOpen ? "250px" : "0";
+  if (isOpen) {
+    // 메뉴를 열기 전 현재 스크롤 위치 저장
+    scrollPosition = window.pageYOffset;
+    myMenuWrap.classList.add("open");
+    document.body.classList.add("no-scroll");
+    document.body.style.top = `-${scrollPosition}px`;
+  } else {
+    // 메뉴를 닫을 때 스크롤 위치 복원
+    myMenuWrap.classList.remove("open");
+    document.body.classList.remove("no-scroll");
+    document.body.style.top = "";
+    window.scrollTo(0, scrollPosition);
+  }
   myMenu.style.right = isOpen ? "0" : "-300px";
 }
 
