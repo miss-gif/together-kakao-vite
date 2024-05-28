@@ -19,8 +19,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1,
@@ -164,15 +163,12 @@ img {
 
 /* layout */
 .inner {
+  position: relative;
   width: 100%;
   max-width: 114rem;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -191,7 +187,7 @@ img {
   left: 0;
   width: 100%;
   height: 70px;
-  z-index: 999;
+  z-index: 99;
   background-color: var(--white);
 }
 .header::after {
@@ -210,24 +206,14 @@ img {
     height: 92px;
   }
   .header__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 }
 @media (max-width: 768px) {
   .main__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 .main {
@@ -240,14 +226,9 @@ img {
 }
 .main__left {
   width: 700px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 @media (max-width: 768px) {
   .main__left {
@@ -257,13 +238,8 @@ img {
 }
 .main__right {
   width: 360px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 30px;
 }
 @media (max-width: 768px) {
@@ -291,15 +267,9 @@ img {
   overflow: hidden;
 }
 .together__change {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: rgb(255, 232, 0);
   height: 250px;
   padding: 34px 26px 29px;
@@ -312,20 +282,12 @@ img {
   font-size: 13px;
 }
 .together__change__total {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-top: 41px;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 21px 20px;
   background-color: #fff;
 }
@@ -338,16 +300,9 @@ img {
 .together__review {
   height: 280px;
   padding: 31px 26px 46px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .together__review__tag {
   font-size: 13px;
@@ -391,23 +346,14 @@ img {
 }
 
 .heartweather__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 12px;
   height: 100%;
 }
 .heartweather__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 60px;
   background-color: #eee;
   width: 100%;
@@ -418,33 +364,20 @@ img {
   background-color: #ddd;
 }
 .heartweather__item-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 100%;
   padding: 0 10px;
 }
 .heartweather__item-info__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-size: 15px;
   height: 100%;
 }
 .heartweather__item-info__members {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-size: 13px;
   height: 100%;
 }
@@ -454,11 +387,8 @@ img {
   height: 100%;
 }
 .news__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 4px;
   margin-top: 30px;
 }
@@ -474,9 +404,7 @@ img {
     width: 50%;
     height: 342px;
     height: 50%;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    flex: 1;
   }
 }
 .news__item-title {
@@ -487,8 +415,6 @@ img {
   position: relative;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .news__item-arrow {
@@ -511,10 +437,7 @@ img {
   border-top: 1px solid rgb(238, 238, 238);
 }
 .footer__inner {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .footer__logo {
   width: 115px;
@@ -533,25 +456,15 @@ img {
     height: 240px;
   }
   .footer__inner {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 }
 .header__logo a {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -560,8 +473,7 @@ img {
     top: 30%;
     left: 50%;
     height: 55px;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
 .header__nav {
@@ -570,8 +482,6 @@ img {
 }
 .header__nav-list {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 2.2rem;
   letter-spacing: -0.1px;
@@ -582,12 +492,8 @@ img {
 .header__nav-item a {
   position: relative;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 1.4rem;
 }
 .header__nav-item.active {
@@ -632,53 +538,34 @@ img {
   }
   .header__nav-list {
     gap: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .header__nav-item a {
     padding: 5px 4px 9px;
   }
 }
 .header__icon-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .header__icon-item.avatar img {
   width: 2.4rem;
   border-radius: 8px;
 }
 .header__icon-item a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 1rem;
 }
 
 @media (max-width: 768px) {
   .header__icon-list {
     height: 55px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-direction: row-reverse;
   }
   .header__icon-item.avatar {
     display: none;
@@ -694,22 +581,24 @@ img {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: -1;
   opacity: 0;
+  z-index: -1;
+  transition: 0.5s;
+  visibility: hidden;
 }
 
 .open {
   opacity: 1;
-  z-index: 1;
+  z-index: 100;
+  visibility: visible;
 }
 
 .my-menu {
   position: fixed;
   top: 0;
   right: -300px;
-  z-index: 1;
+  z-index: 101;
   background-color: #fff;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   height: 100vh;
   padding: 30px;
@@ -720,23 +609,15 @@ img {
 .my-menu__login {
   font-family: "KakaoBig Bold";
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 40px;
   margin-bottom: 20px;
   color: var(--mainBlack);
 }
 .my-menu__login a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 12px;
 }
 .my-menu__login i {
@@ -747,8 +628,6 @@ img {
 }
 .my-menu__btns {
   border-radius: 6px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.03);
@@ -757,15 +636,9 @@ img {
 .my-menu__btn {
   position: relative;
   font-family: "KakaoBig Bold";
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   color: #444;
   background-color: #f9f9f9;
@@ -784,63 +657,37 @@ img {
 }
 .my-menu__btn a {
   padding: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   gap: 5px;
 }
 .my-menu__links {
   margin-top: 28px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 8px;
 }
 .my-menu__links__item {
   font-family: "KakaoBig Bold";
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 42px;
   color: var(--mainBlack);
 }
 .my-menu__links__item a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 13px;
 }
 .my-menu__links__sub {
   margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 5px;
 }
 .my-menu__links__sub__item {
@@ -854,8 +701,7 @@ img {
 .section {
   border-radius: 12px;
   padding: 24px 30px 32px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
   background-color: var(--white);
 }
 .section__title {
@@ -879,20 +725,13 @@ img {
   }
 }
 .fundraising-last-donor .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 20px;
 }
 @media (max-width: 768px) {
   .fundraising-last-donor .card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 .fundraising-last-donor .card__image {
@@ -909,31 +748,18 @@ img {
 }
 .fundraising-last-donor .card__header {
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding: 0 10px;
   background-color: #202020;
   color: #c9c9c9;
 }
 .fundraising-last-donor .card__info {
   width: 335px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column;
 }
 @media (max-width: 768px) {
   .fundraising-last-donor .card__info {
@@ -945,30 +771,18 @@ img {
   line-height: 1.33;
 }
 .fundraising-last-donor .card__value {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-size: 14px;
 }
 .fundraising-last-donor .card__situation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-size: 12px;
 }
 .fundraising-last-donor .card__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 16px;
   font-size: 14px;
 }
@@ -990,28 +804,18 @@ img {
   }
 }
 .fundraising-best .card__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
 @media (max-width: 768px) {
   .fundraising-best .card__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 .fundraising-best .card__item {
   width: 33.33%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 @media (max-width: 768px) {
   .fundraising-best .card__item {
@@ -1023,8 +827,6 @@ img {
 }
 @media (max-width: 768px) {
   .fundraising-best .card__link {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -1065,12 +867,8 @@ img {
   margin: 6px 0;
 }
 .fundraising-best .card__situation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .fundraising-best .card__situation-current-amount {
   font-size: 12px;
@@ -1082,8 +880,6 @@ img {
 }
 
 .fundraising-tag-view .content__tags {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 10px;
   margin-top: 10px;
@@ -1096,28 +892,18 @@ img {
   border-radius: 999px;
 }
 .fundraising-tag-view .card__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
 @media (max-width: 768px) {
   .fundraising-tag-view .card__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 .fundraising-tag-view .card__item {
   width: 33.33%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 @media (max-width: 768px) {
   .fundraising-tag-view .card__item {
@@ -1129,8 +915,6 @@ img {
 }
 @media (max-width: 768px) {
   .fundraising-tag-view .card__link {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -1180,20 +964,13 @@ img {
 }
 
 .fundraising-time-limit .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 20px;
 }
 @media (max-width: 768px) {
   .fundraising-time-limit .card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 .fundraising-time-limit .card__image {
@@ -1210,31 +987,18 @@ img {
 }
 .fundraising-time-limit .card__header {
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   padding: 0 10px;
   background-color: #202020;
   color: #c9c9c9;
 }
 .fundraising-time-limit .card__info {
   width: 335px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column;
 }
 @media (max-width: 768px) {
   .fundraising-time-limit .card__info {
@@ -1246,30 +1010,18 @@ img {
   line-height: 1.33;
 }
 .fundraising-time-limit .card__value {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-size: 14px;
 }
 .fundraising-time-limit .card__situation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-size: 12px;
 }
 .fundraising-time-limit .card__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 16px;
   font-size: 14px;
 }
@@ -1291,20 +1043,13 @@ img {
   }
 }
 .fundraising-time-limit .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 20px;
 }
 @media (max-width: 768px) {
   .fundraising-time-limit .card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 .fundraising-time-limit .card__image {
@@ -1321,31 +1066,18 @@ img {
 }
 .fundraising-time-limit .card__header {
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   padding: 0 10px;
   background-color: #202020;
   color: #c9c9c9;
 }
 .fundraising-time-limit .card__info {
   width: 335px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column;
 }
 @media (max-width: 768px) {
   .fundraising-time-limit .card__info {
@@ -1357,30 +1089,18 @@ img {
   line-height: 1.33;
 }
 .fundraising-time-limit .card__value {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-size: 14px;
 }
 .fundraising-time-limit .card__situation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-size: 12px;
 }
 .fundraising-time-limit .card__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 16px;
   font-size: 14px;
 }
@@ -1402,8 +1122,6 @@ img {
   }
 }
 .card-slide .content__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   border-radius: 12px;
@@ -1411,26 +1129,17 @@ img {
 .card-slide .content__link .content__image {
   width: 250px;
   height: 250px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   overflow: hidden;
   background: url("../images/c1400x960.jpg") no-repeat center/cover;
 }
 .card-slide .content__link .content__info {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column;
   padding: 24px 30px 32px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
   background-color: #fff;
 }
 .card-slide .content__link .content__desc {
@@ -1445,32 +1154,25 @@ img {
   color: rgb(187, 107, 255);
   font-size: 13px;
   letter-spacing: -0.3px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
   border: 1px solid #000;
   padding: 5px 20px;
 }
 
 .card-news .content__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   border-radius: 12px;
 }
 @media (max-width: 768px) {
   .card-news .content__link {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 .card-news .content__link .content__image {
   width: 250px;
   height: 250px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   overflow: hidden;
   background: url("../images/c1400x960.jpg") no-repeat center/cover;
 }
@@ -1481,19 +1183,11 @@ img {
 }
 .card-news .content__link .content__info {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column;
   padding: 24px 30px 32px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
   background-color: #fff;
 }
 .card-news .content__link .content__desc {
@@ -1508,43 +1202,28 @@ img {
   color: rgb(187, 107, 255);
   font-size: 13px;
   letter-spacing: -0.3px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
   border: 1px solid #000;
   padding: 5px 20px;
 }
 
 .card__situation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   color: var(--gray-400);
   font-size: 14px;
 }
 .footer__info .corp__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .footer__info .corp__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 6px 0;
 }
 .footer__info .corp__item:last-child::after {
@@ -1559,8 +1238,6 @@ img {
   background-color: rgb(68, 68, 68);
 }
 .footer__info .sns__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 10px;
 }
@@ -1579,13 +1256,8 @@ small {
 
 @media (max-width: 768px) {
   .footer__info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .corp__item:first-child {
     display: none;
