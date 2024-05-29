@@ -18,7 +18,7 @@
     &__list {
       display: flex;
       gap: 20px;
-      @media (max-width: 768px) {
+      @include tablet {
         flex-direction: column;
       }
     }
@@ -26,13 +26,13 @@
       width: 33.33%;
       display: flex;
       flex-direction: column;
-      @media (max-width: 768px) {
+      @include tablet {
         width: 100%;
       }
     }
     &__link {
       margin-top: 20px;
-      @media (max-width: 768px) {
+      @include tablet {
         display: flex;
       }
     }
@@ -42,7 +42,7 @@
       height: 138px;
       margin-bottom: 10px;
       background: url("../images/c1400x960.jpg") no-repeat center / cover;
-      @media (max-width: 768px) {
+      @include tablet {
         max-width: 124px;
         height: 86px;
         margin-bottom: 0;

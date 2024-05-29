@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    @media (max-width: 768px) {
+    @include tablet {
       flex-direction: column;
     }
 
@@ -14,7 +14,7 @@
       overflow: hidden;
       background: url("../images/c1400x960.jpg") no-repeat center / cover;
       border-radius: 8px;
-      @media (max-width: 768px) {
+      @include tablet {
         width: 100%;
       }
     }
@@ -32,7 +32,7 @@
       display: flex;
       justify-content: space-between;
       flex-direction: column;
-      @media (max-width: 768px) {
+      @include tablet {
         width: 100%;
       }
       &-title {
@@ -66,7 +66,7 @@
       justify-content: space-between;
       margin-top: 16px;
       font-size: 14px;
-      @media (max-width: 768px) {
+      @include tablet {
         gap: 9px;
       }
       button {
@@ -75,7 +75,7 @@
         border: 1px solid #c9c9c9;
         letter-spacing: -0.1px;
         border-radius: 6px;
-        @media (max-width: 768px) {
+        @include tablet {
           width: 50%;
         }
       }

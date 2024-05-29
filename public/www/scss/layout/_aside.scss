@@ -85,7 +85,7 @@
 
   &:nth-child(5) {
     height: 420px;
-    @media (max-width: 768px) {
+    @include tablet {
       height: 793px;
     }
   }
@@ -149,7 +149,7 @@
     background-color: rgb(255, 232, 0);
     border-radius: 4px;
 
-    @media (max-width: 768px) {
+    @include tablet {
       width: 342px;
       // width: 100%;
       width: 50%;
@@ -181,5 +181,5 @@
   }
 }
 
-@media (max-width: 768px) {
+@include tablet {
 }

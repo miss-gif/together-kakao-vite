@@ -180,6 +180,12 @@ img {
   }
 }
 
+@media (max-width: 1115px) {
+  .main__inner {
+    min-width: 1100px;
+  }
+}
+
 /* header */
 .header {
   position: sticky;

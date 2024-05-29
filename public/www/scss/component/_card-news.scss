@@ -4,7 +4,7 @@
     display: flex;
     overflow: hidden;
     border-radius: 12px;
-    @media (max-width: 768px) {
+    @include tablet {
       flex-direction: column;
     }
     .content {
@@ -14,7 +14,7 @@
         flex-shrink: 0;
         overflow: hidden;
         background: url("../images/c1400x960.jpg") no-repeat center / cover;
-        @media (max-width: 768px) {
+        @include tablet {
           width: 100%;
         }
       }

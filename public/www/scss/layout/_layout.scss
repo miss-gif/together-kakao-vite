@@ -15,3 +15,9 @@
     padding: 0 2rem;
   }
 }
+
+.main__inner {
+  @media (max-width: 1115px) {
+    min-width: 1100px;
+  }
+}
